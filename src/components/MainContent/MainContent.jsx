@@ -10,6 +10,8 @@ function MainContent({ page }) {
         return <AboutPage />;
       case 'projects':
         return <ProjectsPage />;
+      case 'learning':
+        return <LearningPage />;
       case 'contact':
         return <ContactPage />;
       default:
@@ -49,6 +51,22 @@ function ProjectsPage() {
     <div>
       <h2>My Projects</h2>
       <p>Here are some of my recent work samples and personal projects.</p>
+    </div>
+  );
+}
+
+function LearningPage() {
+  return (
+    <div>
+      <h2>Learning Journey</h2>
+      <p>Here are the technologies and skills I'm currently learning:</p>
+      <ul>
+        <li><strong>React</strong> - Building modern user interfaces</li>
+        <li><strong>JavaScript ES6+</strong> - Advanced JavaScript concepts</li>
+        <li><strong>CSS & Responsive Design</strong> - Creating beautiful layouts</li>
+        <li><strong>Node.js</strong> - Backend development</li>
+        <li><strong>Git & Version Control</strong> - Collaborative development</li>
+      </ul>
     </div>
   );
 }
